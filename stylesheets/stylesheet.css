@@ -245,3 +245,7 @@ a {
 .cf {
   zoom:1;
 }
+
+.highlighting_container{
+    outline: 5px yellow solid;
+}
