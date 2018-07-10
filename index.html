@@ -23,27 +23,38 @@
 
     <body>
 
-    <header>
+    <div class="container">
+        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+        <nav class="navbar navbar-toggleable-sm navbar-expand-md navbar-inverse navbar-fixed-top">
 
-        <!--<h1>Sravan Karuturi</h1>-->
-        <!--<section id="contact-links">-->
-        <!--&lt;!&ndash;TODO: Change the section id.&ndash;&gt;-->
-        <!--<a href="https://github.com/sravankaruturi" class="fab fa-github"></a>-->
-        <!--<a href="https://www.linkedin.com/in/sravankaruturi/" class="fab fa-linkedin"></a>-->
-        <!--<a href="mailto:sravankumarkaruturi@gmail.com?subject=Contacting after looking at your portfolio" class="fa fa-envelope"></a>-->
-        <!--</section>-->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+            </button>
 
-        <div class="container">
+            <a class="navbar-brand" href="#">./Sravan Karuturi</a>
 
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <a class="navbar-brand" href="#">Logo</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
-            </nav>
-
-        </div>
-
-    </header>
-
+        </nav>
+    </div>
+    <hr />
     <div class="container">
 
         <section id="main_content">
@@ -65,7 +76,7 @@
                 What do I do?
             </h3>
 
-            <ul>
+            <ul class="arrow_points">
                 <li>I currently develop small scale games for my courses as well as some personal projects. </li>
                 <li>I worked for
                     <a href="https://github.com/mysmartprice" class="user-mention">@mysmartprice</a>
@@ -79,16 +90,16 @@
                 <a id="some-of-my-projects" class="anchor" href="#some-of-my-projects" aria-hidden="true">
                     <span aria-hidden="true" class="octicon octicon-link"></span>
                 </a>
-                Some of my Projects
+                Some of my Recent Projects
             </h3>
 
-            <ol>
+            <ul class="arrow_points">
                 <li>
                     My Latest project is for my iOS Game Development class. Together with
                     <a href="https://github.com/BenConnick" class="user-mention">@BenConnick</a>
                     , I created my iOS game "Party Popper". You can visit the github page of the game <a href="https://github.com/Pioneer11X/iOS_Shooter.">here</a> or see a small video of the gameplay <a href="https://www.youtube.com/watch?v=8V1hGn9SGU8">here</a>
                 </li>
-            </ol>
+            </ul>
 
             <h3>
                 <a id="my-resume" class="anchor" href="#my-resume" aria-hidden="true">
