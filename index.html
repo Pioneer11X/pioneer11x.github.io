@@ -40,8 +40,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                    <li class="nav-item dropdown">
+                        <!--<a class="nav-link dropdown-toggle" href="#projects_container" id="navbar_project_dropdown" onclick='hightlight("#projects_container")' data-toggle="dropdown">Projects</a><a class="nav-link dropdown-toggle" href="#projects_container" id="navbar_project_dropdown" onclick='hightlight("#projects_container")' data-toggle="dropdown">Projects</a>-->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbar_project_dropdown" data-toggle="dropdown">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Unity</a>
+                            <a class="dropdown-item" href="#">Web</a>
+                            <a class="dropdown-item" href="#">OpenGL</a>
+                            <a class="dropdown-item" href="#">DirectX</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#resume_container" onclick='hightlight("#resume_container")'>Resume</a>
@@ -85,21 +92,23 @@
                 <li>For my complete resume, click <a>here</a> </li>
             </ul>
 
-            <h3>
-            <!--TODO: Projects are to be in a seperate tab. Highlight three of good projects here-->
-                <a id="some-of-my-projects" class="anchor" href="#some-of-my-projects" aria-hidden="true">
-                    <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>
-                Some of my Recent Projects
-            </h3>
+            <div id="projects_container">
+                <h3>
+                <!--TODO: Projects are to be in a seperate tab. Highlight three of good projects here-->
+                    <a id="some-of-my-projects" class="anchor" href="#some-of-my-projects" aria-hidden="true">
+                        <span aria-hidden="true" class="octicon octicon-link"></span>
+                    </a>
+                    Some of my Recent Projects
+                </h3>
 
-            <ul class="arrow_points">
-                <li>
-                    My Latest project is for my iOS Game Development class. Together with
-                    <a href="https://github.com/BenConnick" class="user-mention">@BenConnick</a>
-                    , I created my iOS game "Party Popper". You can visit the github page of the game <a href="https://github.com/Pioneer11X/iOS_Shooter.">here</a> or see a small video of the gameplay <a href="https://www.youtube.com/watch?v=8V1hGn9SGU8">here</a>
-                </li>
-            </ul>
+                <ul class="arrow_points">
+                    <li>
+                        My Latest project is for my iOS Game Development class. Together with
+                        <a href="https://github.com/BenConnick" class="user-mention">@BenConnick</a>
+                        , I created my iOS game "Party Popper". You can visit the github page of the game <a href="https://github.com/Pioneer11X/iOS_Shooter.">here</a> or see a small video of the gameplay <a href="https://www.youtube.com/watch?v=8V1hGn9SGU8">here</a>
+                    </li>
+                </ul>
+            </div>
 
             <div id="resume_container">
                 <h3>

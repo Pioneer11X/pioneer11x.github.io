@@ -253,3 +253,16 @@ a {
 .highlighting_container{
     outline: 5px yellow solid;
 }
+
+.dropdown-menu{
+  background-color: #151515;
+}
+
+.dropdown-item{
+  color: #b5e853;
+}
+
+.dropdown-item:hover{
+  text-decoration: underline;
+  background-color: #151515;
+}
