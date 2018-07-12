@@ -292,3 +292,13 @@ nav{
 #padding_container{
     padding: 30px;
 }
+
+/*Project Images and stuff*/
+.project-display-image{
+    padding: 5px;
+}
+
+.highlighted_text{
+    color: #b5e853;
+    font-weight: bold;
+}
