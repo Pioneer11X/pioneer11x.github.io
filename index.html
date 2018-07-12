@@ -7,11 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
         <!-- Bootstrap Includes -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="stylesheets/bootstrap/css/bootstrap.css" crossorigin="anonymous">
         <!-- Bootstrap Includes End -->
 
         <!--Font Awesome Icons-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="plugins/fontawesome/css/all.css" crossorigin="anonymous">
         <!--Font Awesome Include Ends-->
 
         <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -44,10 +46,10 @@
                         <!--<a class="nav-link dropdown-toggle" href="#projects_container" id="navbar_project_dropdown" onclick='hightlight("#projects_container")' data-toggle="dropdown">Projects</a><a class="nav-link dropdown-toggle" href="#projects_container" id="navbar_project_dropdown" onclick='hightlight("#projects_container")' data-toggle="dropdown">Projects</a>-->
                         <a class="nav-link dropdown-toggle" href="#" id="navbar_project_dropdown" data-toggle="dropdown">Projects</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Unity</a>
-                            <a class="dropdown-item" href="#">Web</a>
-                            <a class="dropdown-item" href="#">OpenGL</a>
-                            <a class="dropdown-item" href="#">DirectX</a>
+                            <a class="dropdown-item" onclick="hightlight('#unity_projects')" href="#unity_projects">Unity</a>
+                            <a class="dropdown-item" onclick="hightlight('#web_projects')" href="#web_projects">Web</a>
+                            <a class="dropdown-item" onclick="hightlight('#opengl_projects')" href="#opengl_projects">OpenGL</a>
+                            <a class="dropdown-item" onclick="hightlight('#directx_projects')" href="#directx_projects">DirectX</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -174,6 +176,12 @@
                     <div id="opengl_projects">
 
                     </div>
+                    <div id="ios_projects">
+
+                    </div>
+                    <div id="web_projects">
+
+                    </div>
 
 
                 </ul>
@@ -219,9 +227,12 @@
 
 
   <!--Jquery, Ajax and Bootstrap includes-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="javascripts/jquery-3.3.1.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+    <script src="javascripts/popper.min.js"></script>
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
+    <script src="javascripts/bootstrap/js/bootstrap.min.js"></script>
 
     <script>
         function hightlight(target) {
