@@ -245,3 +245,8 @@ a {
 .cf {
   zoom:1;
 }
+
+.footer{
+  padding: 20px;
+  font-size: 30px;
+}

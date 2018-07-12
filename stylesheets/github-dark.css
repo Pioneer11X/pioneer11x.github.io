@@ -126,6 +126,11 @@ a{
   color: #b5e853
 }
 
+a:hover{
+  color: #b5e853 !important;
+  text-decoration: underline !important;
+}
+
 .fa.fa-bars{
   color: #b5e853;
 }
