@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -103,9 +103,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
-#main_content h3 {
-  font-size: 18px;
-}
+
+/* ఆపేసా h3 మామూలుగాసనే బాగుంది
+#main_content h3 {*/
+  /*font-size: 18px;*/
+/*}*/
 
 #main_content h4 {
   font-size: 14px;
@@ -265,4 +267,28 @@ a {
 .dropdown-item:hover{
   text-decoration: underline;
   background-color: #151515;
+}
+
+/*Adjust the Font size for the Navbar*/
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+}
+
+.nav-item .dropdown-item{
+    font-size: 1.25rem;
+}
+
+/*Navbar to be always on Top.*/
+
+nav{
+    background-color: #151515;
+}
+
+#padding_container{
+    padding: 30px;
 }
