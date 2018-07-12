@@ -250,3 +250,6 @@ a {
   padding: 20px;
   font-size: 30px;
 }
+.highlighting_container{
+    outline: 5px yellow solid;
+}
