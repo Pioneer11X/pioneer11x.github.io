@@ -302,3 +302,9 @@ nav{
     color: #b5e853;
     font-weight: bold;
 }
+
+/*Project Details in the Title*/
+
+.project-title-details{
+  float: right;
+}

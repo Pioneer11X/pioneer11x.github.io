@@ -114,8 +114,8 @@
 
                     <div class="container-fluid" id="unity_projects">
 
-                        <h4>Action Tower Defense Prototype</h4>
-                        <span style="float: right">Test</span>
+                        <!--TODO: There is a way to automate the details using :after tag I think Look at that-->
+                        <h4>Action Tower Defense Prototype <span class="project-title-details">C#, Unity</span> </h4>
                         <br/>
                         <div class="row">
                             <!--TODO: Add a playable prototype-->
@@ -144,7 +144,7 @@
                         <br />
                         <br />
 
-                        <h4>Code Blank</h4>
+                        <h4>Code Blank <span class="project-title-details">C#, Unity, C++, Custom Engine</span> </h4>
                         <div class="row">
                             <!--TODO: Add a playable prototype-->
                             <div class="col-sm-12 col-md-4">
@@ -180,7 +180,7 @@
 
                     <div class="container-fluid" id="web_projects">
 
-                        <h4>LabOps - RIT Internal Tool</h4>
+                        <h4>LabOps - RIT Internal Tool<span class="project-title-details">PHP, CSS, Javascript</span></h4>
                         <div class="row">
                             <div class="col-sm-12 col-md-8">
                                 <p>
@@ -211,7 +211,7 @@
                         <br />
                         <br />
 
-                        <h4>AdminOps - RIT Internal Tool</h4>
+                        <h4>AdminOps - RIT Internal Too<span class="project-title-details">PHP, CSS, Javascript</span>l</h4>
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
                                 <img class="project-display-image" src="project_media/AdminOps/ops-1.png" />
@@ -247,7 +247,7 @@
                         <br />
                         <br />
 
-                        <h4>MySmartPrice - A Price Comparision Website</h4>
+                        <h4>MySmartPrice - A Price Comparision Website<span class="project-title-details">PHP, CSS, Javascript</span></h4>
                         <div class="row">
                             <!--TODO: Add a clickable link-->
                             <div class="col-sm-12 col-md-8">
@@ -282,7 +282,7 @@
 
                     <div class="container-fluid" id="opengl_projects">
 
-                        <h4>Kodi Engine</h4>
+                        <h4>Kodi Engine <span class="project-title-details">C++, OpenGL</span></h4>
                         <div class="row">
                             <!--TODO: Add a playable prototype-->
                             <div class="col-sm-12 col-md-8">
@@ -315,7 +315,7 @@
 
                     <div class="container-fluid" id="directx_projects">
 
-                        <h4>Quirky Quantums</h4>
+                        <h4>Quirky Quantums <span class="project-title-details">C++, DirectX</span></h4>
                         <div class="row">
                             <!--TODO: Add a playable prototype-->
                             <div class="col-sm-12 col-md-8">
@@ -345,7 +345,7 @@
                         <br />
                         <br />
 
-                        <h4>DirectX Engine</h4>
+                        <h4>DirectX Engine <span class="project-title-details">C++, DirectX</span></h4>
                         <div class="row">
                             <!--TODO: Add a playable prototype-->
                             <div class="col-sm-12 col-md-4">
@@ -381,7 +381,7 @@
 
                     <div class="container-fluid" id="ios_projects">
 
-                        <h4>Party Popper</h4>
+                        <h4>Party Popper <span class="project-title-details">Swift, XCode</span></h4>
                         <div class="row">
                             <!--TODO: Add a playable prototype-->
                             <div class="col-sm-12 col-md-8">
@@ -464,24 +464,39 @@
     <script>
         function hightlight(target) {
 
-            setTimeout(
-                function () {
-                    window.scrollBy(0, -120);
-                }, 0.25
-            );
-
-
             $(target).addClass("highlighting_container");
 
             setTimeout(
                 function () {
                     $(target).removeClass("highlighting_container");
-                }, 300
+                }, 1000
             );
 
-
-
         }
+    </script>
+
+    <!--To handle the smooth scrolling bit.-->
+    <script>
+        // handle links with @href started with '#' only
+        $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top - 120;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos});
+        });
     </script>
 
     </body>
