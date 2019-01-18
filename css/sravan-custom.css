@@ -1,0 +1,4 @@
+ul:not(.list-inline), ol:not(.list-inline){
+    text-align: initial;
+}
+
